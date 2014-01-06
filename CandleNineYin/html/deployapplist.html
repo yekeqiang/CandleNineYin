@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container bs-docs-container">
+ <div class="row">
+   <div class="col-md-2">
+    <!--<div class="bs-sidebar hidden-print" role="complementary">-->
+        <!--<ul class="nav bs-sidenav">-->
+           <!--<li>-->
+             <!--<a href="#dropdowns">下拉菜单</a>-->
+             <!--<ul class="nav">-->
+               <!--<li><a href="#dropdowns-example">案例</a></li>-->
+               <!--<li><a href="#dropdowns-alignment">对齐选项</a></li>-->
+               <!--<li><a href="#dropdowns-headers">标题</a></li>-->
+               <!--<li><a href="#dropdowns-disabled">禁用的菜单项</a></li>-->
+             <!--</ul>-->
+           <!--</li>-->
+           <!--<li>-->
+        <!--</ul>-->
+    <!--</div>-->
+   </div>
+   <div class="col-md-8" role="main">
+    <div class="panel panel-default">
+       <!-- Default panel contents -->
+     <div class="panel-heading">上线清单</div>
+
+
+
+       <!-- Table -->
+       <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>序号</th>
+              <th>工单号</th>
+              <th>工单名</th>
+              <th>工单内容</th>
+              <th>工单时间</th>
+              <th>上线人员</th>
+              <th>操作</th>
+              <!--<th>删除</th>-->
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>
+                  <p>
+                      <a href="#" class="btn btn-primary" role="button">查看</a>
+                      <a href="#" class="btn btn-default" role="button">修改</a>
+                      <a href="#" class="btn btn-default" role="button">删除</a>
+                  </p>
+              </td>
+              <!--<td>@mdo</td>-->
+
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>
+                 <p>
+                      <a href="#" class="btn btn-primary" role="button">查看</a>
+                      <a href="#" class="btn btn-default" role="button">修改</a>
+                      <a href="#" class="btn btn-default" role="button">删除</a>
+                 </p>
+              </td>
+              <!--<td>@mdo</td>-->
+
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>
+                  <p>
+                      <a href="#" class="btn btn-primary" role="button">查看</a>
+                      <a href="#" class="btn btn-default" role="button">修改</a>
+                      <a href="#" class="btn btn-default" role="button">删除</a>
+                  </p>
+              </td>
+              <!--<td>@twitter</td>-->
+            </tr>
+          </tbody>
+       </table>
+       <ul class="pagination pagination-lg">
+         <li class="disabled"><a href="#">&laquo;</a></li>
+         <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+         <li><a href="#">2</a></li>
+         <li><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li><a href="#">&raquo;</a></li>
+       </ul>
+
+
+     </div>
+         <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  填写上线工单
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">上线工单</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">撤销</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    </div>
+
+
+
+   </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p>You searched for: <strong>{{ query }}</strong></p>
+
+{% if company %}
+<p>Found {{ company|length }} company. {{ company|pluralize }}</p>
+<ul>
+    {% for cpy in company %}
+    <li>{{ cpy.company_name }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No companys matched your search criteria.</p>
+{% endif %}
+</body>
+</html>

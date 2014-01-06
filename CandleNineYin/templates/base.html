@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--
+    <title>{JARVIS}Admin</title>
+    -->
+    <title>运维管理系统 1.0</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- http://davidbcalhoun.com/2010/viewport-metatag -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+<!-- Bootstrap core CSS -->
+<!--<link href="http://cdn.staticfile.org/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css" rel="stylesheet">-->
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<!--<link href="/static/docs-assets/css/docs.css" rel="stylesheet">-->
+<!--<link href="/static/docs-assets/highlight/css/github.css" rel="stylesheet">-->
+<style>
+body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+pre code { background: transparent; }
+</style>
+
+
+
+
+</head>
+  <body>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    </header>
+
+
+    <!-- Docs page layout -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">运维管理系统</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="http://127.0.0.1:8000/deployapplist">上线列表</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">性能数据<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li><a href="#">应用性能</a></li>
+                 <li><a href="#">服务器性能</a></li>
+                 <li><a href="#">网络性能</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">Separated link</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <!--<li><a href="#about">性能数据</a></li>-->
+            <li><a href="#about">服务器</a></li>
+            <!--<li><a href="#about">报表</a></li>-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">报表<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li><a href="#">上线TOP</a></li>
+                 <li><a href="#">上线失败原因</a></li>
+                 <li><a href="#">业务线</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">Separated link</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="http://127.0.0.1:8000/contact_form">联系我们</a></li>
+            <!--<li><a>用户名:{ user.username }}</a></li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+   <!--<div class="container theme-showcase">-->
+
+    <!--<div class="container">-->
+   <div class="jumbotron">
+      <div class="container">
+      <p class="lead">{% block content %}{% endblock %}</p>
+      </div>
+      <!--<div class="starter-template">-->
+        <!--<h1>欢迎来到运维管理系统</h1>-->
+
+      <!--</div>-->
+
+    </div><!-- /.container -->
+
+
+      <!--<div class="row">-->
+        <!--<div class="col-lg-4">-->
+          <!--<h2>Heading</h2>-->
+          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
+          <!--<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>-->
+        <!--</div>-->
+        <!--<div class="col-lg-4">-->
+          <!--<h2>Heading</h2>-->
+          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
+          <!--<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>-->
+       <!--</div>-->
+        <!--<div class="col-lg-4">-->
+          <!--<h2>Heading</h2>-->
+          <!--<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>-->
+          <!--<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+   <!--</div>-->
+
+{% include 'footer.html' %}

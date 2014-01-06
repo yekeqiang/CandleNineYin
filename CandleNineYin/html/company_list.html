@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}The current time{% endblock %}
+
+{% block content %}
+
+{% if companys %}
+<p>Found {{ companys|length }} company. {{ companys|pluralize }}</p>
+<ul>
+    {% for company in companys %}
+    <li>{{ company.company_name }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No companys matched your search criteria.</p>
+{% endif %}
+{% endblock %}
